@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hat.browsermini.ads.NativeAdsFacebook xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ad_unit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:outlineProvider="bounds"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/native_ad_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ad_icon" />
+
+    <ImageView
+        android:id="@+id/native_ad_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/native_ad_badge"
+        android:layout_marginTop="5dp" />
+
+    <com.hat.browsermini.view.TextIrgoneTheme
+        android:id="@+id/native_ad_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/native_ad_badge"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/native_ad_social_context"
+        android:layout_toRightOf="@+id/native_ad_icon"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/adtext_title_size" />
+
+    <com.hat.browsermini.view.TextIrgoneTheme
+        android:id="@+id/native_ad_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/native_ad_title"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/native_ad_social_context"
+        android:layout_toRightOf="@+id/native_ad_icon"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textColor="@color/ad_text_gray"
+        android:textSize="@dimen/adnormal" />
+
+    <com.hat.browsermini.view.TextIrgoneTheme
+        android:id="@+id/native_ad_call_to_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ad_button_selector"
+        android:layout_below="@id/native_ad_badge"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/adtext_title_size" />
+
+
+    <com.hat.browsermini.view.TextIrgoneTheme
+        android:id="@+id/native_ad_social_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/native_ad_call_to_action"
+        android:layout_below="@id/native_ad_call_to_action"
+        android:ellipsize="end"
+        android:textColor="@color/ad_text_gray"
+        android:textSize="@dimen/adsmall" />
+</com.hat.browsermini.ads.NativeAdsFacebook>

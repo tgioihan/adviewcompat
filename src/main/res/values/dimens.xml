@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="adnormal">10.0dip</dimen>
+    <dimen name="adsmall">9.0dip</dimen>
+    <dimen name="adtext_title_size">12.0dip</dimen>
+    <dimen name="button_corner">4dp</dimen>
+</resources>

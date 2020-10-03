@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AdViewCompat">
+        <attr name="adProvider" format="enum">
+            <enum name="Admob" value="0" />
+            <enum name="FbAudience" value="1" />
+        </attr>
+        <attr name="fbType" format="string" />
+        <attr name="fbId" format="string" />
+        <attr name="admobSize" format="string" />
+        <attr name="admobAdUnitId" format="string" />
+    </declare-styleable>
+
+</resources>
